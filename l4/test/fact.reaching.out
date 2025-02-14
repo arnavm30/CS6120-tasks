@@ -1,0 +1,12 @@
+b1:
+  in:  ∅
+  out: ('i', 'b1', 1), ('result', 'b1', 0)
+header:
+  in:  ('cond', 'header', 1), ('i', 'b1', 1), ('i', 'body', 2), ('one', 'body', 1), ('result', 'b1', 0), ('result', 'body', 0), ('zero', 'header', 0)
+  out: ('cond', 'header', 1), ('i', 'b1', 1), ('i', 'body', 2), ('one', 'body', 1), ('result', 'b1', 0), ('result', 'body', 0), ('zero', 'header', 0)
+body:
+  in:  ('cond', 'header', 1), ('i', 'b1', 1), ('i', 'body', 2), ('one', 'body', 1), ('result', 'b1', 0), ('result', 'body', 0), ('zero', 'header', 0)
+  out: ('cond', 'header', 1), ('i', 'body', 2), ('one', 'body', 1), ('result', 'body', 0), ('zero', 'header', 0)
+end:
+  in:  ('cond', 'header', 1), ('i', 'b1', 1), ('i', 'body', 2), ('one', 'body', 1), ('result', 'b1', 0), ('result', 'body', 0), ('zero', 'header', 0)
+  out: ('cond', 'header', 1), ('i', 'b1', 1), ('i', 'body', 2), ('one', 'body', 1), ('result', 'b1', 0), ('result', 'body', 0), ('zero', 'header', 0)

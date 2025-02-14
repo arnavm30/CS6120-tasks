@@ -1,0 +1,12 @@
+b1:
+  in:  ('cond', None, None)
+  out: ('a', 'b1', 0), ('b', 'b1', 1), ('cond', None, None)
+left:
+  in:  ('a', 'b1', 0), ('b', 'b1', 1), ('cond', None, None)
+  out: ('a', 'b1', 0), ('b', 'left', 0), ('c', 'left', 1), ('cond', None, None)
+right:
+  in:  ('a', 'b1', 0), ('b', 'b1', 1), ('cond', None, None)
+  out: ('a', 'right', 0), ('b', 'b1', 1), ('c', 'right', 1), ('cond', None, None)
+end:
+  in:  ('a', 'b1', 0), ('a', 'right', 0), ('b', 'b1', 1), ('b', 'left', 0), ('c', 'left', 1), ('c', 'right', 1), ('cond', None, None)
+  out: ('a', 'b1', 0), ('a', 'right', 0), ('b', 'b1', 1), ('b', 'left', 0), ('c', 'left', 1), ('c', 'right', 1), ('cond', None, None), ('d', 'end', 0)

@@ -1,0 +1,7 @@
+[envs.reaching]
+command = "bril2json < {filename} | python3 ../data-flow.py reaching"
+output."reaching.out" = "-"
+
+[envs.live]
+command = "bril2json < {filename} | python3 ../data-flow.py live"
+output."live.out" = "-"
