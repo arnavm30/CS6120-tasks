@@ -116,7 +116,7 @@ if __name__== "__main__":
                 args = [((arg['name']) for arg in func['args'])] if 'args' in func else []
                 run(LiveVariables(args), name2block)
             case 'reaching':
-                args = [((arg['name'], None, None) for arg in func['args'])] if 'args' in func else []
+                args = [((arg['name'], '-1', '-1') for arg in func['args'])] if 'args' in func else []
                 run(ReachingDefinitions(args), name2block)
             case _:
                 print('Invalid analysis')
