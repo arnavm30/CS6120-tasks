@@ -30,6 +30,8 @@ class DataFlowAnalysis:
         if self.direction == 'forward':
             in_[worklist[0][0]] = set().union(*self.args)
         else:
+            out[worklist[0][0]] = set().union(*self.args)
+
             for name in cfg:
                 cfg[name]['preds'], cfg[name]['succs'] = cfg[name]['succs'], cfg[name]['preds']
             worklist = list(reversed(worklist))
