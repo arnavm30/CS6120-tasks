@@ -25,8 +25,7 @@ def form_blocks(instrs):
 
 def block_map(blocks):
     name2block = []
-
-    for block in blocks: 
+    for block in blocks:
         if block and 'label' in block[0]:
             name = block[0]['label']
             block = block[1:]
@@ -37,9 +36,9 @@ def block_map(blocks):
 
     return name2block
 
-def form_cfg(name2block): 
+def form_cfg(name2block):
     cfg = defaultdict(lambda: {'preds': [], 'succs': []})
-    
+
     for i, (name, block) in enumerate(name2block):
         if not block:
             continue
@@ -54,5 +53,10 @@ def form_cfg(name2block):
             next_name = name2block[i + 1][0]
             cfg[name]['succs'].append(next_name)
             cfg[next_name]['preds'].append(name)
+
+    if cfg[name2block[0][0]]['preds']:
+        cfg['entry'] = {'preds': [], 'succs': [name2block[0][0]]}
+        cfg[name2block[0][0]]['preds'].append('entry')
+        name2block.insert(0, ('entry', []))
     
     return cfg

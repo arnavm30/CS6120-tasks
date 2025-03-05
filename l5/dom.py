@@ -27,6 +27,7 @@ def dominators(name2block, cfg):
 
     changed = True
     while changed:
+        changed = False
         for bname in bnames:
             if bname == entry:
                 continue
@@ -79,6 +80,65 @@ def dominance_frontier(cfg, dom):
     
     return frontier
 
+def brute_force_dominators(cfg, entry):    
+    def enumerate_paths(bname, current, all_paths, target, visited_edges):
+        current.append(bname)
+
+        if bname == target:
+            all_paths.append(set(current))
+        else:
+            for succ in cfg.get(bname, {}).get('succs', []):
+                edge = (bname, succ)
+                if edge not in visited_edges:
+                    visited_edges.add(edge)
+                    enumerate_paths(succ, current, all_paths, target, visited_edges)
+                    visited_edges.remove(edge)
+
+        current.pop()
+
+    all_paths_to_bname = {bname: [] for bname in cfg}
+    for bname in cfg:
+        if bname == entry:
+            all_paths_to_bname[bname] = [{entry}] 
+        else:
+            paths = []
+            enumerate_paths(entry, [], paths, bname, set())
+            all_paths_to_bname[bname] = paths
+
+    dom = {}
+    for bname in cfg:
+        if bname == entry:
+            dom[bname] = {entry}
+        elif all_paths_to_bname[bname]:
+            dom[bname] = set.intersection(*all_paths_to_bname[bname])
+        else:
+            dom[bname] = set()
+
+    return dom
+
+def remove_unreachable(cfg, entry):
+    def reachable(cfg, entry):
+        visited = set()
+
+        def dfs(bname):
+            if bname in visited:
+                return
+            visited.add(bname)
+            for succ in cfg[bname]['succs']:
+                dfs(succ)
+
+        dfs(entry)
+        return visited
+    
+    reachable = reachable(cfg, entry)
+    for bname in cfg.copy():
+        if bname not in reachable:
+            cfg.pop(bname)
+    for bname in cfg.copy():
+        cfg[bname]['preds'] = [pred for pred in cfg[bname]['preds'] if pred in cfg]
+
+    return cfg
+
 def map_printer(m):
     return {k: sorted(list(v)) for k,v in m.items()}
 
@@ -87,6 +147,7 @@ def main():
     for func in prog['functions']:
         name2block = block_map(form_blocks(func['instrs'])) 
         cfg = form_cfg(name2block)
+        remove_unreachable(cfg, name2block[0][0])
 
         dom = dominators(name2block, cfg)
 
@@ -103,7 +164,11 @@ def main():
                 json.dump(
                     map_printer(dominance_frontier(cfg, dom)), sys.stdout, indent=2, sort_keys=True
                 )
-            
+            case 'dom-bf':
+                json.dump(
+                    map_printer(brute_force_dominators(cfg, name2block[0][0])), sys.stdout, indent=2, sort_keys=True
+                )
+                
 if __name__ == '__main__':
     main()
         
