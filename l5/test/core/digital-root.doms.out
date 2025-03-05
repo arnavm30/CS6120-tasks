@@ -1,0 +1,41 @@
+{
+  "b1": [
+    "b1"
+  ],
+  "begin": [
+    "b1",
+    "begin"
+  ],
+  "check_done": [
+    "b1",
+    "begin",
+    "check_done",
+    "check_result"
+  ],
+  "check_result": [
+    "b1",
+    "begin",
+    "check_result"
+  ],
+  "done": [
+    "b1",
+    "begin",
+    "check_done",
+    "check_result",
+    "done"
+  ],
+  "process_result": [
+    "b1",
+    "begin",
+    "check_result",
+    "process_result"
+  ]
+}{
+  "b1": [
+    "b1"
+  ]
+}{
+  "b1": [
+    "b1"
+  ]
+}

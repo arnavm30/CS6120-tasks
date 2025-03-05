@@ -1,0 +1,40 @@
+{
+  "b1": [
+    "b1"
+  ],
+  "begin": [
+    "b1",
+    "begin"
+  ],
+  "body": [
+    "b1",
+    "begin",
+    "body",
+    "check"
+  ],
+  "check": [
+    "b1",
+    "begin",
+    "check"
+  ],
+  "end": [
+    "b1",
+    "begin",
+    "end"
+  ],
+  "neg": [
+    "b1",
+    "neg"
+  ],
+  "then": [
+    "b1",
+    "begin",
+    "body",
+    "check",
+    "then"
+  ]
+}{
+  "b1": [
+    "b1"
+  ]
+}

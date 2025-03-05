@@ -1,0 +1,15 @@
+[envs.doms]
+command = "bril2json < {filename} |  /opt/homebrew/bin/python3 ../../dom.py dom"
+output."doms.out" = "-"
+
+[envs.doms-tree]
+command = "bril2json < {filename} |  /opt/homebrew/bin/python3 ../../dom.py dom-tree"
+output."doms-tree.out" = "-"
+
+[envs.doms-frontier]
+command = "bril2json < {filename} |  /opt/homebrew/bin/python3 ../../dom.py dom-frontier"
+output."doms-frontier.out" = "-"
+
+[envs.doms-bf]
+command = "bril2json < {filename} |  /opt/homebrew/bin/python3 ../../dom.py dom-bf"
+output."doms.out" = "-"

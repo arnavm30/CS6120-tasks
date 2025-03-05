@@ -1,0 +1,31 @@
+{
+  "b1": [
+    "b1"
+  ],
+  "ifno": [
+    "b1",
+    "ifno",
+    "loopbody",
+    "loopcheck"
+  ],
+  "ifyes": [
+    "b1",
+    "ifyes",
+    "loopbody",
+    "loopcheck"
+  ],
+  "loopbody": [
+    "b1",
+    "loopbody",
+    "loopcheck"
+  ],
+  "loopcheck": [
+    "b1",
+    "loopcheck"
+  ],
+  "loopend": [
+    "b1",
+    "loopcheck",
+    "loopend"
+  ]
+}

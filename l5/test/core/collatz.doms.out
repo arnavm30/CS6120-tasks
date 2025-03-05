@@ -1,0 +1,40 @@
+{
+  "b1": [
+    "b1"
+  ],
+  "cond": [
+    "b1",
+    "cond",
+    "print"
+  ],
+  "end": [
+    "b1",
+    "cond",
+    "end",
+    "print"
+  ],
+  "even": [
+    "b1",
+    "cond",
+    "even",
+    "loop",
+    "print"
+  ],
+  "loop": [
+    "b1",
+    "cond",
+    "loop",
+    "print"
+  ],
+  "odd": [
+    "b1",
+    "cond",
+    "loop",
+    "odd",
+    "print"
+  ],
+  "print": [
+    "b1",
+    "print"
+  ]
+}

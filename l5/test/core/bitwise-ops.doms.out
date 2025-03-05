@@ -1,0 +1,87 @@
+{
+  "b1": [
+    "b1"
+  ]
+}{
+  "add": [
+    "add",
+    "b1",
+    "here",
+    "loop",
+    "stay"
+  ],
+  "b1": [
+    "b1"
+  ],
+  "doOr": [
+    "b1",
+    "doOr",
+    "here",
+    "loop"
+  ],
+  "end": [
+    "b1",
+    "end",
+    "loop"
+  ],
+  "end_loop": [
+    "b1",
+    "end_loop",
+    "here",
+    "loop",
+    "stay"
+  ],
+  "here": [
+    "b1",
+    "here",
+    "loop"
+  ],
+  "loop": [
+    "b1",
+    "loop"
+  ],
+  "stay": [
+    "b1",
+    "here",
+    "loop",
+    "stay"
+  ]
+}{
+  "b1": [
+    "b1"
+  ]
+}{
+  "b1": [
+    "b1"
+  ]
+}{
+  "b1": [
+    "b1"
+  ]
+}{
+  "and_op": [
+    "and_op",
+    "b1"
+  ],
+  "b1": [
+    "b1"
+  ],
+  "end": [
+    "b1",
+    "end"
+  ],
+  "or_op": [
+    "b1",
+    "or_op",
+    "useless_lbl"
+  ],
+  "useless_lbl": [
+    "b1",
+    "useless_lbl"
+  ],
+  "xor_op": [
+    "b1",
+    "useless_lbl",
+    "xor_op"
+  ]
+}

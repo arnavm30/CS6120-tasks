@@ -1,0 +1,92 @@
+{
+  "abs_res": [
+    "abs_res",
+    "b1"
+  ],
+  "b1": [
+    "b1"
+  ],
+  "mul_neg_one": [
+    "b1",
+    "mul_neg_one"
+  ]
+}{
+  "b1": [
+    "b1"
+  ]
+}{
+  "entry": [
+    "entry"
+  ],
+  "while.body": [
+    "entry",
+    "while.body",
+    "while.cond"
+  ],
+  "while.cond": [
+    "entry",
+    "while.cond"
+  ],
+  "while.finish": [
+    "entry",
+    "while.cond",
+    "while.finish"
+  ]
+}{
+  "b1": [
+    "b1"
+  ],
+  "check_b": [
+    "b1",
+    "check_b"
+  ],
+  "is_good": [
+    "b1",
+    "is_good"
+  ],
+  "special_case": [
+    "b1",
+    "check_b",
+    "special_case"
+  ]
+}{
+  "entry": [
+    "entry"
+  ],
+  "for.body": [
+    "entry",
+    "for.body",
+    "for.cond"
+  ],
+  "for.body.print": [
+    "entry",
+    "for.body",
+    "for.body.print",
+    "for.cond"
+  ],
+  "for.cond": [
+    "entry",
+    "for.cond"
+  ],
+  "for.finish": [
+    "entry",
+    "for.cond",
+    "for.finish"
+  ],
+  "gcd": [
+    "entry",
+    "for.body",
+    "for.cond",
+    "gcd"
+  ],
+  "lcm": [
+    "entry",
+    "for.body",
+    "for.cond",
+    "lcm"
+  ]
+}{
+  "b1": [
+    "b1"
+  ]
+}

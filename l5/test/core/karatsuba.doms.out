@@ -1,0 +1,73 @@
+{
+  "b1": [
+    "b1"
+  ]
+}{
+  "b1": [
+    "b1"
+  ],
+  "else": [
+    "b1",
+    "else"
+  ],
+  "end": [
+    "b1",
+    "end"
+  ],
+  "then": [
+    "b1",
+    "then"
+  ]
+}{
+  "b1": [
+    "b1"
+  ],
+  "while.body": [
+    "b1",
+    "while.body",
+    "while.cond"
+  ],
+  "while.cond": [
+    "b1",
+    "while.cond"
+  ],
+  "while.finish": [
+    "b1",
+    "while.cond",
+    "while.finish"
+  ]
+}{
+  "b1": [
+    "b1"
+  ],
+  "else": [
+    "b1",
+    "else"
+  ],
+  "then": [
+    "b1",
+    "then"
+  ]
+}{
+  "b1": [
+    "b1"
+  ]
+}{
+  "b1": [
+    "b1"
+  ],
+  "for.body.1": [
+    "b1",
+    "for.body.1",
+    "for.cond.1"
+  ],
+  "for.cond.1": [
+    "b1",
+    "for.cond.1"
+  ],
+  "for.end.1": [
+    "b1",
+    "for.cond.1",
+    "for.end.1"
+  ]
+}

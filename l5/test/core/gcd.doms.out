@@ -1,0 +1,50 @@
+{
+  "b1": [
+    "b1"
+  ],
+  "cmp.val": [
+    "b1",
+    "cmp.val"
+  ],
+  "else.1": [
+    "b1",
+    "cmp.val",
+    "else.1"
+  ],
+  "else.2": [
+    "b1",
+    "cmp.val",
+    "else.2",
+    "loop.bound",
+    "update.val"
+  ],
+  "if.1": [
+    "b1",
+    "cmp.val",
+    "if.1"
+  ],
+  "if.2": [
+    "b1",
+    "cmp.val",
+    "if.2",
+    "loop.bound",
+    "update.val"
+  ],
+  "loop.bound": [
+    "b1",
+    "cmp.val",
+    "loop.bound"
+  ],
+  "program.end": [
+    "b1",
+    "cmp.val",
+    "loop.bound",
+    "program.end"
+  ],
+  "update.val": [
+    "b1",
+    "cmp.val",
+    "loop.bound",
+    "update.val"
+  ]
+}

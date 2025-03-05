@@ -1,0 +1,87 @@
+{
+  "b1": [
+    "b1"
+  ],
+  "for.body": [
+    "b1",
+    "for.body",
+    "for.cond"
+  ],
+  "for.cond": [
+    "b1",
+    "for.cond"
+  ],
+  "for.end": [
+    "b1",
+    "for.cond",
+    "for.end"
+  ],
+  "if.false": [
+    "b1",
+    "for.body",
+    "for.cond",
+    "if.false"
+  ],
+  "if.true": [
+    "b1",
+    "for.body",
+    "for.cond",
+    "if.true"
+  ]
+}{
+  "b1": [
+    "b1"
+  ],
+  "for.body.pow": [
+    "b1",
+    "for.body.pow",
+    "for.cond.pow"
+  ],
+  "for.cond.pow": [
+    "b1",
+    "for.cond.pow"
+  ],
+  "for.end.pow": [
+    "b1",
+    "for.cond.pow",
+    "for.end.pow"
+  ],
+  "if.false.pow": [
+    "b1",
+    "for.body.pow",
+    "for.cond.pow",
+    "if.false.pow"
+  ],
+  "if.true.pow": [
+    "b1",
+    "for.body.pow",
+    "for.cond.pow",
+    "if.true.pow"
+  ]
+}{
+  "b1": [
+    "b1"
+  ],
+  "if.end.palindrome": [
+    "b1",
+    "if.end.palindrome"
+  ],
+  "if.false.mirror": [
+    "b1",
+    "if.false.mirror",
+    "if.false.palindrome"
+  ],
+  "if.false.palindrome": [
+    "b1",
+    "if.false.palindrome"
+  ],
+  "if.true.mirror": [
+    "b1",
+    "if.false.palindrome",
+    "if.true.mirror"
+  ],
+  "if.true.palindrome": [
+    "b1",
+    "if.true.palindrome"
+  ]
+}

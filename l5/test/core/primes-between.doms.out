@@ -1,0 +1,96 @@
+{
+  "false": [
+    "false",
+    "for.outer.init"
+  ],
+  "for.inner.body": [
+    "for.inner.body",
+    "for.inner.cond",
+    "for.inner.init",
+    "for.outer.body",
+    "for.outer.cond",
+    "for.outer.init"
+  ],
+  "for.inner.cond": [
+    "for.inner.cond",
+    "for.inner.init",
+    "for.outer.body",
+    "for.outer.cond",
+    "for.outer.init"
+  ],
+  "for.inner.end": [
+    "for.inner.cond",
+    "for.inner.end",
+    "for.inner.init",
+    "for.outer.body",
+    "for.outer.cond",
+    "for.outer.init"
+  ],
+  "for.inner.init": [
+    "for.inner.init",
+    "for.outer.body",
+    "for.outer.cond",
+    "for.outer.init"
+  ],
+  "for.outer.body": [
+    "for.outer.body",
+    "for.outer.cond",
+    "for.outer.init"
+  ],
+  "for.outer.cond": [
+    "for.outer.cond",
+    "for.outer.init"
+  ],
+  "for.outer.end": [
+    "for.outer.cond",
+    "for.outer.end",
+    "for.outer.init"
+  ],
+  "for.outer.init": [
+    "for.outer.init"
+  ],
+  "if.inner.body": [
+    "for.inner.body",
+    "for.inner.cond",
+    "for.inner.init",
+    "for.outer.body",
+    "for.outer.cond",
+    "for.outer.init",
+    "if.inner.body"
+  ],
+  "if.inner.end": [
+    "for.inner.body",
+    "for.inner.cond",
+    "for.inner.init",
+    "for.outer.body",
+    "for.outer.cond",
+    "for.outer.init",
+    "if.inner.end"
+  ],
+  "if.outer.body": [
+    "for.inner.cond",
+    "for.inner.end",
+    "for.inner.init",
+    "for.outer.body",
+    "for.outer.cond",
+    "for.outer.init",
+    "if.outer.body"
+  ],
+  "if.outer.end": [
+    "for.inner.cond",
+    "for.inner.end",
+    "for.inner.init",
+    "for.outer.body",
+    "for.outer.cond",
+    "for.outer.init",
+    "if.outer.end"
+  ],
+  "true": [
+    "for.outer.init",
+    "true"
+  ]
+}{
+  "b1": [
+    "b1"
+  ]
+}
